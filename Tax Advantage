@@ -1,0 +1,192 @@
+<!-- Use Playfair Display + Open Sans, exact palette. Icons via SVG or library. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Indexed Universal Life (IUL) — Tax-Advantaged Growth & Lifetime Protection | Maxim Pacziga</title>
+  <meta name="description" content="Learn how an IUL can grow tax-advantaged cash, protect your family for life, and create a tax-free legacy. Book a free consultation with Maxim Pacziga.">
+  <meta property="og:title" content="IUL: Grow Wealth, Protect Family, Tax-Free Access">
+  <meta property="og:image" content="YOUR_OG_IMAGE_URL_HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,800|Open+Sans:400,600|Lato:400,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --deep-navy: #1F497D;
+      --deep-navy-alt: #1A365D;
+      --emerald-green: #1F8A70;
+      --emerald-green-alt: #2E8B57;
+      --warm-gold: #C9A227;
+      --warm-gold-alt: #DAA520;
+      --action-red: #C00000;
+      --action-red-alt: #B22222;
+      --white: #FFFFFF;
+      --charcoal: #222222;
+    }
+    body { font-family: 'Open Sans', Lato, 'Helvetica Neue', Arial, sans-serif; background: var(--white); color: var(--charcoal); line-height: 1.6; margin: 0; }
+    h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; margin-bottom: 0.25em; }
+    h1 { font-size: clamp(32px, 5vw, 48px); }
+    h2 { font-size: clamp(22px, 3vw, 28px); }
+    .section-title { color: var(--deep-navy); border-bottom: 2px solid var(--deep-navy); padding-bottom: 0.25em; }
+    .highlight-gold { color: var(--warm-gold); font-weight: 800; }
+    .cta-btn, .cta-btn:visited {
+      display: inline-block; background: var(--action-red); color: var(--white); font-weight: 700; border-radius: 8px;
+      padding: 0.75em 2em; border: none; cursor: pointer; box-shadow: 0 2px 8px rgba(192,0,0,0.08); font-size: 1.12em;
+      transition: background 0.2s;
+      text-decoration: none; 
+    }
+    .cta-btn:hover { background: var(--action-red-alt); }
+    .sticky-cta { position: fixed; right: 1em; bottom: 1em; z-index: 10; }
+    .hero { background: var(--deep-navy); color: var(--white); padding: 3rem 1.5rem 2rem 1.5rem; text-align: center; }
+    .hero .headline { font-size: clamp(32px,5vw,48px); font-weight: 800; margin-bottom: 0.25em; }
+    .hero .subheadline { font-size: 1.25em; margin-bottom: 1.25em; }
+    .hero .highlight { color: var(--warm-gold); font-weight: 800; }
+    .hero .trust { color: rgba(255,255,255,0.80); font-size: 0.98em; }
+    .section { max-width: 820px; margin: 0 auto; padding: 2.5rem 1rem; }
+    .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    .benefit-card { background: var(--white); border-radius: 0.5em; box-shadow: 0 2px 12px rgba(31,72,125,0.06); border-top: 4px solid var(--emerald-green); padding: 1.5em 1em 1em 1em; }
+    .benefit-card .icon { color: var(--emerald-green); font-size: 1.8rem; margin-bottom: 0.5em; }
+    .why-wait { background: #F8FBFA; border-left: 6px solid var(--emerald-green); }
+    .why-wait .fomo { color: var(--warm-gold); font-weight: 700; }
+    .mini-compare { background: #F3F5F8; border-radius: 8px; margin: 2rem 0; }
+    .mini-compare-table { display: grid; grid-template-columns: repeat(3,1fr); text-align: center; border: none; padding: 1.5rem 0; }
+    .mini-compare-cell { font-size: 1.1em; margin-bottom: 0.5em; }
+    .mini-compare-title { font-weight: 700; color: var(--deep-navy); }
+    .check { color: var(--emerald-green); font-weight: 800; font-size: 1.2em; }
+    .dash { color: #CCC; font-size: 1.28em; }
+    .badges { display: flex; gap: 1.5em; margin: 1.25em 0 0.25em; flex-wrap: wrap; }
+    .badge { background: var(--deep-navy); color: var(--white); font-size: 0.98em; padding: 0.55em 1.3em; border-radius: 8px; }
+    .testimonial { font-style: italic; color: #444; margin-top: 1em; margin-bottom: .75em; }
+    .cta-section { background: var(--deep-navy); color: var(--white); text-align: center; padding: 2.8rem 1.5rem 2.8rem 1.5rem; }
+    .cta-section .cta-btn { margin-top: 1em; }
+    footer { background: #FAFAFB; color: #666; padding: 1.5rem 1rem; text-align: center; font-size: 1em; }
+    .footer-contact { color: var(--deep-navy); font-weight: 700; }
+    .footer-note { font-size: 0.97em; color: #AAA; margin-top: 0.4em; }
+    form { max-width: 540px; margin: 0 auto; background: var(--white); border-radius: 8px; box-shadow: 0 4px 16px rgba(31,72,125,0.08); padding: 2.2em 1.5em; }
+    label { display: block; margin-top: 1.1em; margin-bottom: 0.25em; font-weight: 600; }
+    input, select, textarea {
+      width: 100%; padding: 0.7em 1em; font-size: 1.07em; border-radius: 6px; border: 1.5px solid #BBB; margin-bottom: 0.6em;
+      font-family: 'Open Sans', Arial, sans-serif;
+    }
+    .form-btn { background: var(--action-red); color: var(--white); font-weight: 700; border: none; padding: 0.85em 0; border-radius: 8px; font-size: 1.15em; cursor: pointer; margin-top: 1em; }
+    .form-btn:hover { background: var(--action-red-alt); }
+    .form-note { font-size: 0.98em; color: #888; margin-top: 0.25em; }
+    @media (max-width: 720px) {
+      .benefits-grid { grid-template-columns: 1fr; }
+      .mini-compare-table { grid-template-columns: 1fr; row-gap: 1em; }
+      .sticky-cta { left: 1em; right: 1em; bottom: 0.75em; }
+    }
+  </style>
+  <!-- Add your Analytics / Calendar scripts here if needed -->
+</head>
+<body>
+  <header class="hero">
+    <div class="headline">How the Wealthy Build Tax-Free Income—and Never Lose to Market Crashes</div>
+    <div class="subheadline">A modern IUL strategy to <span class="highlight">grow tax-advantaged cash</span>, protect your family for life, and build <span class="highlight">multi-generational wealth</span>.</div>
+    <a href="#contact" class="cta-btn">Schedule Your Free Consultation</a>
+    <div class="trust">Licensed guidance • No cost • Personalized plan</div>
+  </header>
+  
+  <main>
+    <section class="section" id="what-is-iul">
+      <h2 class="section-title">What Exactly Is an IUL?</h2>
+      <p>An Indexed Universal Life policy provides <span class="highlight-gold">lifetime coverage</span> while building <span class="highlight-gold">cash value</span> tied to a market index (e.g., S&amp;P 500). When the market rises you <span class="highlight-gold">participate in gains</span>; when it falls, a <span class="highlight-gold">0% floor</span> protects you.</p>
+    </section>
+    
+    <section class="section">
+      <h2 class="section-title">Why Smart Investors Choose IUL</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card"><div class="icon">🏦</div>Tax-Free Growth & Access: Tax-deferred growth; tax-free access via policy loans.</div>
+        <div class="benefit-card"><div class="icon">🛡️</div>No Market Losses: Participate in gains with downside protection.</div>
+        <div class="benefit-card"><div class="icon">📈</div>Upside Potential: Index-linked growth; carrier bonuses/multipliers when applicable.</div>
+        <div class="benefit-card"><div class="icon">🔁</div>Use While It Grows: Borrow against cash value; value continues compounding.</div>
+        <div class="benefit-card"><div class="icon">⏱️</div>Flexible Access: No age-59½ penalty; access on your timeline.</div>
+        <div class="benefit-card"><div class="icon">❤️</div>Living Benefits: Critical/chronic/terminal illness access.</div>
+        <div class="benefit-card"><div class="icon">🏆</div>Tax-Free Legacy: Pass wealth to beneficiaries, typically avoiding probate.</div>
+      </div>
+      <div style="text-align:center; margin-top:1.8em;">
+        <a href="#contact" class="cta-btn">See Your Personalized Numbers</a>
+      </div>
+    </section>
+    
+    <section class="section why-wait">
+      <h2 class="section-title">Why Waiting Is the Most Expensive Decision</h2>
+      <ul style="color:var(--charcoal); font-size:1.05em; margin-left:1.2em;">
+        <li>Idle cash loses to taxes and inflation</li>
+        <li>IULs can fund retirement, real estate, business opportunities—with protection</li>
+        <li>Delaying can mean losing <span class="highlight-gold">tens of thousands</span> in potential tax-free growth</li>
+      </ul>
+      <div class="fomo">The question isn’t “Should I get an IUL?”—it’s “How much growth am I losing by not having one?”</div>
+    </section>
+    
+    <section class="section mini-compare">
+      <h2 class="section-title">IUL vs. Traditional Accounts</h2>
+      <div class="mini-compare-table">
+        <div>
+          <div class="mini-compare-title">Growth Upside</div>
+          <div class="mini-compare-cell"><span class="check">✔</span> (IUL)</div>
+          <div class="mini-compare-cell"><span class="dash">—</span> (Traditional)</div>
+        </div>
+        <div>
+          <div class="mini-compare-title">Downside Protection</div>
+          <div class="mini-compare-cell"><span class="check">✔</span> (IUL)</div>
+          <div class="mini-compare-cell"><span class="dash">—</span> (Traditional)</div>
+        </div>
+        <div>
+          <div class="mini-compare-title">Tax-Advantaged Access</div>
+          <div class="mini-compare-cell"><span class="check">✔</span> (IUL)</div>
+          <div class="mini-compare-cell"><span class="dash">—</span> (Traditional)</div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section">
+      <div class="badges">
+        <span class="badge">Licensed &amp; Appointed</span><span class="badge">Personalized Designs</span><span class="badge">No-Cost Consultation</span>
+      </div>
+      <div class="testimonial">“So glad we set up our family's IUL. Fast, clear, and so much peace of mind!”</div>
+      <div class="testimonial">“I finally have a tax-free retirement strategy—not just hoping the market keeps going up.”</div>
+    </section>
+    
+    <section class="cta-section">
+      <h2 class="headline">Ready to See How an IUL Could Work for You?</h2>
+      <p style="opacity:0.9;">Schedule a <span class="highlight">free consultation</span> and get a personalized IUL plan for your goals, income, and timeline. No cost, no obligation.</p>
+      <a href="#contact" class="cta-btn cta-btn-lg">Schedule Your Free Consultation</a>
+    </section>
+    
+    <section id="contact" class="section">
+      <form>
+        <label for="fname">First Name</label>
+        <input id="fname" name="fname" type="text" required/>
+        <label for="lname">Last Name</label>
+        <input id="lname" name="lname" type="text" required/>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required/>
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" required/>
+        <label for="calltime">Preferred Call Time</label>
+        <select id="calltime" name="calltime">
+          <option>Morning</option>
+          <option>Afternoon</option>
+          <option>Evening</option>
+        </select>
+        <label for="goals">Goals (select all that apply)</label>
+        <select id="goals" name="goals" multiple>
+          <option>Retirement income</option>
+          <option>Tax strategy</option>
+          <option>Family protection</option>
+          <option>Wealth/legacy</option>
+        </select>
+        <button class="form-btn">Get My Free IUL Plan</button>
+        <div class="form-note">We respect your privacy. No spam—ever.</div>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="footer-contact">Advisor: Maxim Pacziga • <a href="mailto:maximpacziga.plg@gmail.com">maximpacziga.plg@gmail.com</a> • (561) 360-5357</div>
+    <div class="footer-note">This page is for educational purposes. Product availability, features, and rider benefits vary by carrier and state. Loans/withdrawals may reduce cash value and death benefit; policy must be properly funded and maintained. Not tax/legal advice—consult your professional advisors.</div>
+  </footer>
+  
+  <a href="#contact" class="cta-btn sticky-cta">Schedule Your Free Consultation</a>
+</body>
+</html>
